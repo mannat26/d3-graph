@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import Chart from './Chart'
 import './App.css';
 
 function App() {
+  const data = [
+    {
+      country: "China",
+      population: 1394015977
+    },{
+      country: "India",
+      population: 1326093247
+    },
+    {
+      country: "United States",
+      population: 329877505
+    },
+    {
+      country: "Indonesia",
+      population: 267026366
+    },
+    {
+      country: "Pakistan",
+      population: 233500636
+    }
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h3>D3 EXAMPLE</h3>
+      <Chart data={data}/>
     </div>
   );
 }
